@@ -7,9 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="logo-wrapper">
-    <%= image_tag 'logo.png', class: 'logo' %>
+  <div class="hub">
+    <%= image_tag 'hub.png', id: 'hub-start' %>
+    <%= image_tag 'fingerprint.png', id: 'fingerprint' %> 
+    <h3 id="access-granted">Access<br>Granted</h3>
+    <%= image_tag 'who-is-ohno.png', id: 'who-is-ohno' %>
+    <%= image_tag 'how-can-i-help.png', id: 'how-can-i-help' %>
+    <%= image_tag 'stay-updated.png', id: 'stay-updated' %>
   </div>
-  <h1> Coming soon! </h1>
+  <div class="floating-display">
+    <%= image_tag 'floating-display.png', class: 'floating-display-img' %>
+    <div class="coming-soon-wrapper">
+      <h1 class="coming-soon"> Coming soon. </h1>
+    </div>
+  </div> 
 </body>
 </html>
