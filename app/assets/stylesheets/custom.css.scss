@@ -1,4 +1,6 @@
-@font-face {
+/* Universal */
+
+@font-face { 
     font-family: Orator Std;
     src: url('/assets/fonts/oratorstd.otf');
 }
@@ -19,6 +21,10 @@ body {
 	background-image: url(background3.png); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+p {
+    display: inline;
 }
 
 header {
@@ -53,6 +59,8 @@ h3 {
     color: black;
 }
 
+/* Home page */
+
 .floating-display {
     text-align: center;
     width: 100%;
@@ -64,18 +72,6 @@ h3 {
 .floating-display-img {
     width: 50%;
     border-radius: 5px;
-}
-
-.coming-soon {
-	width: 100%;
-	position: absolute;
-	top: 0;
-    font-size: 3em
-}
-
-.coming-soon-wrapper {
-    background-color: #61D863;
-    opacity: 0.7;
 }
 
 .hub {
@@ -112,7 +108,7 @@ h3 {
         margin-top: 6px;
         right: 62px;
     }
-    #how-can-i-help {
+    #what-is-saveohno {
         position: absolute;
         z-index: 1;
         padding-right: 7px;
@@ -129,6 +125,40 @@ h3 {
         top: 85px;
     }
 }
+
+   /* Who is ohno */
+
+.who-is-ohno-content {
+	width: 100%;
+	position: absolute;
+	top: 15px;
+    font-size: 2em;
+    font-family: 'Orator Std';
+}
+
+.ohno {
+    width: 7.5%;
+    position: absolute;
+    left: 0; 
+    right:0;
+    margin: auto;
+}
+
+.ohno-wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+   /* What is SaveOhno */
+
+.what-is-saveohno-content {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    font-size: 2em;
+    font-family: 'Orator Std';
+}
+
 
 
 

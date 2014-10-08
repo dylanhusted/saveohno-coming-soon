@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
 <head>
   <title>SaveOhno</title>
@@ -12,13 +12,25 @@
     <%= image_tag 'fingerprint.png', id: 'fingerprint' %> 
     <h3 id="access-granted">Access<br>Granted</h3>
     <%= image_tag 'who-is-ohno.png', id: 'who-is-ohno' %>
-    <%= image_tag 'how-can-i-help.png', id: 'how-can-i-help' %>
+    <%= image_tag 'what-is-saveohno.png', id: 'what-is-saveohno' %>
     <%= image_tag 'stay-updated.png', id: 'stay-updated' %>
   </div>
   <div class="floating-display">
     <%= image_tag 'floating-display.png', class: 'floating-display-img' %>
-    <div class="coming-soon-wrapper">
-      <h1 class="coming-soon"> Coming soon. </h1>
+    <div class="who-is-ohno-content">
+      <p id="who-is-ohno-line1">This is your great <br>granddaughter, Ohno.</p>
+      <p id="who-is-ohno-line2">She lives far in the<br> future, in a time seriously<br> affected by the climate<br> change caused from today<br></p>
+      <%= image_tag 'OHNO-sad.png', class: 'ohno-sad' %>
+      <br>
+      <div class="ohno-wrapper">
+        <%= image_tag 'OHNO.png', class: 'ohno' %>
+      </div>
+    </div>
+    <div class="what-is-saveohno-content">
+    <p id="what-is-saveohno-line1">SaveOhno.org is a platform <br>where people can see climate<br> change affect the life of their<br> future great granddaughter, Ohno.</p> 
+    <p id="what-is-saveohno-line2">Through this site, users'<br> real world actions influence the<br> virtual life of Ohno. If a user<br> signs petitions, emails politicians,<br> supports projects etc, Ohno's life<br> improves. If the user doesn't,<br> her life only worsens.</p>
+    <p id="what-is-saveohno-line3">This is your world, and <br>you determine it's level of<br> prosperity, or despair.<br></p>
+    <%= image_tag 'OHNO-neutral.png', class: 'ohno-neutral' %>
     </div>
   </div> 
 </body>
