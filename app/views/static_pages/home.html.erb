@@ -27,10 +27,16 @@
       </div>
     </div>
     <div class="what-is-saveohno-content">
-    <p id="what-is-saveohno-line1">SaveOhno.org is a platform <br>where people can see climate<br> change affect the life of their<br> future great granddaughter, Ohno.</p> 
-    <p id="what-is-saveohno-line2">Through this site, users'<br> real world actions influence the<br> virtual life of Ohno. If a user<br> signs petitions, emails politicians,<br> supports projects etc, Ohno's life<br> improves. If the user doesn't,<br> her life only worsens.</p>
-    <p id="what-is-saveohno-line3">This is your world, and <br>you determine it's level of<br> prosperity, or despair.<br></p>
-    <%= image_tag 'OHNO-neutral.png', class: 'ohno-neutral' %>
+      <p id="what-is-saveohno-line1">SaveOhno.org is a platform <br> (launching soon) where people can<br> see climate change affect the <br>life of Ohno.</p> 
+      <p id="what-is-saveohno-line2">Through this site, users'<br> real world actions influence the<br> virtual life of Ohno. If a user<br> signs petitions, emails politicians,<br> supports projects etc, Ohno's life<br> improves. If the user doesn't,<br> her life only worsens.</p>
+      <p id="what-is-saveohno-line3">This is your world, and <br>you determine it's level of<br> prosperity, or despair.<br></p>
+      <%= image_tag 'OHNO-neutral.png', class: 'ohno-neutral' %>
+    </div>
+    <div class="next-button-wrapper">
+      <%= image_tag 'next-button.png', id: 'next-button' %>
+    </div>
+    <div class="stay-updated-content">
+      <%= render partial: 'pre_launch_users/new_pre_launch_user', object: @pre_launch_user %>
     </div>
   </div> 
 </body>

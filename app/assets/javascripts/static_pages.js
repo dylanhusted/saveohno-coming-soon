@@ -15,6 +15,9 @@ $(document).ready(function() {
     $('#what-is-saveohno-line2').hide();
     $('#what-is-saveohno-line3').hide();
     $('.ohno-neutral').hide();
+    $('.next-button-wrapper').hide();
+    $('.stay-updated-content').hide();
+
 
     $('#hub-start').unbind('click');
 	$('#hub-start')
@@ -33,11 +36,15 @@ $(document).ready(function() {
     .click(function () {
         $('#what-is-saveohno-line2').stop();
         $('#what-is-saveohno-line3').stop();
+        $('.next-button-wrapper').stop();
         $('#what-is-saveohno-line1').hide();
         $('#what-is-saveohno-line2').hide();
         $('#what-is-saveohno-line3').hide();
         $('.ohno-neutral').hide();
+        $('.next-button-wrapper').hide();
         $("#what-is-saveohno").prop("onclick", false);
+        $('.stay-updated-content').hide();
+        $('.next-button-wrapper').hide();
 
         $('#who-is-ohno-line1').fadeIn('slow');
         $('.ohno').fadeIn('slow');
@@ -54,6 +61,8 @@ $(document).ready(function() {
         $('#who-is-ohno-line2').stop();
         $('#what-is-saveohno-line2').stop();
         $('#what-is-saveohno-line3').stop();
+        $('.ohno-sad').stop();
+        $('.ohno-neutral').stop();
         $('#who-is-ohno-line1').hide();
         $('#who-is-ohno-line2').hide();
         $('#what-is-saveohno-line1').hide();
@@ -61,11 +70,48 @@ $(document).ready(function() {
         $('#what-is-saveohno-line3').hide();
         $('.ohno').hide();
         $('.ohno-sad').hide();
-        $('ohno-neutral').hide();
+        $('.ohno-neutral').hide();
+        $('.stay-updated-content').hide();
 
         $('#what-is-saveohno-line1').fadeIn('slow').delay(3500).fadeOut('slow');
-        $('#what-is-saveohno-line2').delay(4700).fadeIn('slow').delay(7200).fadeOut('slow');
-        $('#what-is-saveohno-line3').delay(13000).fadeIn('slow');
-        $('.ohno-neutral').delay(13000).fadeIn('slow');
+        $('#what-is-saveohno-line2').delay(4700).fadeIn('slow');
+        $('.next-button-wrapper').delay(4700).fadeIn('slow');
     });
+    $('#next-button').unbind('click');
+    $('#next-button')
+    .button()
+    .click(function () {
+        $('#what-is-saveohno-line2').fadeOut('slow');
+        $('.next-button-wrapper').fadeOut('slow');
+        $('#what-is-saveohno-line3').delay(1000).fadeIn('slow');
+        $('.ohno-neutral').delay(1000).fadeIn('slow');
+    });
+
+    $('#stay-updated').unbind('click');
+    $('#stay-updated')
+    .button()
+    .click(function () {
+        $('#who-is-ohno-line2').stop();
+        $('#what-is-saveohno-line2').stop();
+        $('#what-is-saveohno-line3').stop();
+        $('.ohno-sad').stop();
+        $('.ohno-neutral').stop();
+        $('.next-button-wrapper').stop();
+        $('#who-is-ohno-line1').hide();
+        $('#who-is-ohno-line2').hide();
+        $('#what-is-saveohno-line1').hide();
+        $('#what-is-saveohno-line2').hide();
+        $('#what-is-saveohno-line3').hide();
+        $('.ohno').hide();
+        $('.ohno-sad').hide();
+        $('.ohno-neutral').hide();
+        $('.next-button-wrapper').hide();
+
+        $('.stay-updated-content').fadeIn('slow');
+    });
+
 });
+
+
+
+

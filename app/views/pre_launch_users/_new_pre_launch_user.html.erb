@@ -1,0 +1,13 @@
+<p> SaveOhno.org is coming soon.<br> Wanna stay updated on our progress<br> towards launch and gain some<br> early-bird points? Sign up now!</p>
+<div id="new-user-form">
+<%= form_for(@pre_launch_user) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.submit "Submit", class: "submit-button" %>
+<% end %>
+</div>
+<p>(we won't spam you, we promise)</p>
