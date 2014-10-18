@@ -2,13 +2,20 @@
 <html>
 <head>
   <title>Saveohno</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href="/assets/laptop.css" media="screen and (min-width: 1450px)" rel="stylesheet" />
+  <link href="/assets/laptop2.css" media="screen and (min-width: 1305px) and (max-width: 1450px)" rel="stylesheet" />
+  <link href="/assets/tablet.css" media="screen and (min-width: 1100px) and (max-width: 1305px)" rel="stylesheet" />
+  <link href="/assets/tablet2.css" media="screen and (min-width: 950px) and (max-width: 1100px)" rel="stylesheet" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <header>
-    <%= image_tag 'logo.png', class: 'logo' %>
+	<div class="logo-wrapper">
+    	<span class="helper"></span>
+    	<%= image_tag 'logo.png', class: 'logo' %>
+    </div>
+    <p class="points"> Points: 0 </p>
 </header>
 
 <%= yield %>

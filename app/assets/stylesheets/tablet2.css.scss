@@ -1,0 +1,261 @@
+/* Universal */
+
+@font-face { 
+    font-family: Orator Std;
+    src: url('/assets/fonts/oratorstd.otf');
+}
+
+@font-face {
+    font-family: 'BerlinSansFB';
+    src: url(font-path('BerlinSansFB.ttf')) format('truetype')
+}
+
+html, body {
+	height: 100%;
+	overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+body {
+	/* background-color: #63B1D5; */
+	background-image: url(background.png); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 50%) {
+  body { font-size: 10%;}
+}
+
+p {
+    display: inline;
+    font-size: 0.5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'BerlinSansFB';
+    /* color: #5E7382; */
+    color: white;
+    -webkit-text-stroke: 0.25px black;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Orator Std';
+    color: black;
+    font-weight: normal;
+}
+
+/* Header */
+
+header {
+    background-image: url(futuristic-header2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: -1%;
+    /* margin-top: -1%; */ 
+    width: 102%;
+    height: 10%;
+    position: relative;
+    white-space: nowrap;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+ .logo {
+    width: 14%;
+    margin-left: 2%;
+    vertical-align: middle;
+    opacity: 0.7;
+} 
+
+.logo-wrapper {
+    height: 76.4%;
+}
+
+.points {
+    font-family: Orator Std;
+    top: -1px;
+    right: 25px;
+    position: absolute;
+    font-size: 75%;
+    opacity: 0.7;
+}
+
+/* Home page */
+
+.floating-display {
+    text-align: center;
+    width: 100%;
+    margin-top: 8%;
+    display: inline-block;
+    position: relative;
+}
+
+.floating-display-img {
+    width: 45%;
+    border-radius: 5px;
+    cursor: move;
+}
+
+.hub {
+    margin-top: 1%;
+    margin-right: 1%;
+    float: right;
+    position: relative;
+    width: 90%;
+    #hub-start {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        cursor: pointer;
+    }
+    #fingerprint {
+        position: absolute;
+        z-index: 4;
+        padding-right: 7px;
+        margin-top: 6px;
+        right: 0;
+    }
+    #access-granted {
+        position: absolute;
+        z-index: 4;
+        padding-right: 7px;
+        margin-top: 26px;
+        opacity: .75;
+        right: 1px;
+        font-size: 90%;
+        opacity: 0.7;
+    }
+    #who-is-ohno {
+        position: absolute;
+        z-index: 1;
+        padding-right: 7px;
+        margin-top: 6px;
+        right: 62px;
+        cursor: pointer;
+        width: 11%;
+    }
+    #what-is-saveohno {
+        position: absolute;
+        z-index: 2;
+        padding-right: 7px;
+        margin-top: 6px;
+        right: 52px;
+        top: 63px;
+        cursor: pointer;
+        width: 10%;
+    }
+    #stay-updated {
+        position: absolute;
+        z-index: 1;
+        padding-right: 7px;
+        margin-top: 6px;
+        right: 12px;
+        top: 80px;
+        cursor: pointer;
+        width: 13%;
+    }
+}
+
+#next-button {
+    bottom: 10px;
+    position: absolute;
+    font-family: 'Orator Std';
+    margin: auto;
+    cursor: pointer;
+    width: 5%;
+}
+
+.next-button-wrapper {
+    width: 100%;
+}
+
+   /* Who is ohno */
+
+.who-is-ohno-content {
+	width: 100%;
+	position: absolute;
+	top: 15px;
+    font-size: 2em;
+    font-family: 'Orator Std';
+    opacity: 0.7;
+    line-height: 55%;
+    letter-spacing: 3px;
+}
+
+.ohno {
+    width: 6%;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    margin: auto;
+}
+
+.ohno-wrapper {
+    width: 100%;
+}
+
+   /* What is SaveOhno */
+
+.what-is-saveohno-content {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    font-size: 2em;
+    font-family: 'Orator Std';
+    opacity: 0.7;
+    line-height: 75%;
+}
+
+.ohno-neutral {
+    width: 5%;
+}
+
+  /* How can I stay updated? */
+
+.stay-updated-content {
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    font-size: 2em;
+    font-family: 'Orator Std';
+    opacity: 0.7;
+    line-height: 75%;
+    margin-top: 1%;
+    .submit-button {
+      background-color: #31A877;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius:3px;
+      color: #fff;
+      font-family: 'BerlinSansFB';
+      font-size: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      border:none;
+    }
+}
+
+#new-user-form {
+    margin-top: 2.5%;
+    display: block;
+    input {
+        border: none;
+        border-radius: 3px;
+        width: 5%;
+    }
+    label {
+        font-size: .5em;
+    }
+}
+
+
+
+
+

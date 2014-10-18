@@ -34,9 +34,16 @@ $(document).ready(function() {
     $('#who-is-ohno')
     .button()
     .click(function () {
+        $('#who-is-ohno-line2').stop();
         $('#what-is-saveohno-line2').stop();
         $('#what-is-saveohno-line3').stop();
         $('.next-button-wrapper').stop();
+        $('.ohno-sad').stop();
+        $('.ohno').stop();
+        $('#who-is-ohno-line1').hide();
+        $('#who-is-ohno-line2').hide();
+        $('.ohno-sad').hide();
+        $('.ohno').hide();
         $('#what-is-saveohno-line1').hide();
         $('#what-is-saveohno-line2').hide();
         $('#what-is-saveohno-line3').hide();
@@ -49,9 +56,9 @@ $(document).ready(function() {
         $('#who-is-ohno-line1').fadeIn('slow');
         $('.ohno').fadeIn('slow');
         $('#who-is-ohno-line1').delay(1300).fadeOut('slow');
-        $('.ohno').delay(1300).fadeOut('slow');
+        $('.ohno').delay(1300).fadeOut('slow').css("margin-top", "0.8%");
         $('#who-is-ohno-line2').delay(2840).fadeIn('slow');
-        $('.ohno-sad').delay(2840).fadeIn('slow');
+        $('.ohno-sad').delay(2840).fadeIn('slow').css("margin-top", "0.8%");
     });
 
     $('#what-is-saveohno').unbind('click');
@@ -84,7 +91,7 @@ $(document).ready(function() {
         $('#what-is-saveohno-line2').fadeOut('slow');
         $('.next-button-wrapper').fadeOut('slow');
         $('#what-is-saveohno-line3').delay(1000).fadeIn('slow');
-        $('.ohno-neutral').delay(1000).fadeIn('slow');
+        $('.ohno-neutral').delay(1000).fadeIn('slow').css("margin-top", "1.5%");
     });
 
     $('#stay-updated').unbind('click');
