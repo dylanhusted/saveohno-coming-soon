@@ -1,8 +1,7 @@
 $(document).ready(function() {
     /* $('.floating-display').resizable(); */
     $('.floating-display').draggable();
-    $('#fingerprint').hide();
-    $('#access-granted').hide();
+    $('#fingerprint2').hide();
     $('#who-is-ohno').hide();
     $('#what-is-saveohno').hide();
     $('#stay-updated').hide();
@@ -15,16 +14,24 @@ $(document).ready(function() {
     $('#what-is-saveohno-line2').hide();
     $('#what-is-saveohno-line3').hide();
     $('.ohno-neutral').hide();
+    $('.ohno-tornado').hide();
     $('.next-button-wrapper').hide();
     $('.stay-updated-content').hide();
+    $('#access-granted').hide();
 
+    $('body').click(function() {
+        $('#start-here').hide();
+        $('.overlay').hide();
+    });
 
-    $('#hub-start').unbind('click');
-	$('#hub-start')
+    $('#fingerprint').unbind('click');
+	$('#fingerprint')
 	.button()
 	.click(function () {
-    	$('#fingerprint').fadeIn('fast').delay(100).fadeOut('slow');
+    	$('#fingerprint2').fadeIn('slow').delay(150).fadeOut('slow');
+        $('#fingerprint').fadeOut('fast');
     	$('#access-granted').delay(900).fadeIn('slow');
+        $('#hub-start').delay(900).fadeOut('slow');
     	$('#who-is-ohno').delay(900).fadeIn('slow');
     	$('#what-is-saveohno').delay(900).fadeIn('slow');
     	$('#stay-updated').delay(900).fadeIn('slow');
@@ -48,6 +55,7 @@ $(document).ready(function() {
         $('#what-is-saveohno-line2').hide();
         $('#what-is-saveohno-line3').hide();
         $('.ohno-neutral').hide();
+        $('.ohno-tornado').hide();
         $('.next-button-wrapper').hide();
         $("#what-is-saveohno").prop("onclick", false);
         $('.stay-updated-content').hide();
@@ -70,6 +78,7 @@ $(document).ready(function() {
         $('#what-is-saveohno-line3').stop();
         $('.ohno-sad').stop();
         $('.ohno-neutral').stop();
+        $('.ohno-tornado').hide();
         $('#who-is-ohno-line1').hide();
         $('#who-is-ohno-line2').hide();
         $('#what-is-saveohno-line1').hide();
@@ -81,6 +90,7 @@ $(document).ready(function() {
         $('.stay-updated-content').hide();
 
         $('#what-is-saveohno-line1').fadeIn('slow').delay(3500).fadeOut('slow');
+        $('.ohno-tornado').fadeIn('slow').delay(3500).fadeOut('slow');
         $('#what-is-saveohno-line2').delay(4700).fadeIn('slow');
         $('.next-button-wrapper').delay(4700).fadeIn('slow');
     });
@@ -112,6 +122,7 @@ $(document).ready(function() {
         $('.ohno').hide();
         $('.ohno-sad').hide();
         $('.ohno-neutral').hide();
+        $('.ohno-tornado').hide();
         $('.next-button-wrapper').hide();
 
         $('.stay-updated-content').fadeIn('slow');

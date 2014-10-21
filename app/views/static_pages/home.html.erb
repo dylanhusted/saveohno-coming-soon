@@ -7,14 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="turn-device">
+    <p> On a phone or tablet? Please turn your device sideways! </p>
+    <p> On a laptop or desktop? Please make your browser window larger! </p>
+  </div>
   <div class="hub">
     <%= image_tag 'hub2.png', id: 'hub-start' %>
     <%= image_tag 'fingerprint.png', id: 'fingerprint' %> 
-    <h3 id="access-granted">Access<br>Granted</h3>
+    <%= image_tag 'fingerprint2.png', id: 'fingerprint2' %> 
+    <%= image_tag 'access-granted.png', id: 'access-granted' %>
     <%= image_tag 'who-is-ohno2.png', id: 'who-is-ohno' %>
     <%= image_tag 'what-is-saveohno2.png', id: 'what-is-saveohno' %>
     <%= image_tag 'stay-updated2.png', id: 'stay-updated' %>
   </div>
+  <%= image_tag 'arrow.png', id: 'start-here' %>
+  <div class="overlay"></div>
   <div class="floating-display">
     <%= image_tag 'floating-display2.png', class: 'floating-display-img' %>
     <div class="who-is-ohno-content">
@@ -27,7 +34,8 @@
       </div>
     </div>
     <div class="what-is-saveohno-content">
-      <p id="what-is-saveohno-line1">SaveOhno.org is a platform <br> (launching soon) where people can<br> see climate change affect the <br>life of Ohno.</p> 
+      <p id="what-is-saveohno-line1">SaveOhno.org is a platform <br> (launching soon) where people can<br> see climate change affect the <br>life of Ohno.<br></p>
+      <%= image_tag 'ohno-tornado.png', class: 'ohno-tornado' %> 
       <p id="what-is-saveohno-line2">Through this site, users'<br> real world actions influence the<br> virtual life of Ohno. If a user<br> signs petitions, emails politicians,<br> supports projects etc, Ohno's life<br> improves. If the user doesn't,<br> her life only worsens.</p>
       <p id="what-is-saveohno-line3">This is your world, and <br>you determine it's level of<br> prosperity, or despair.<br></p>
       <%= image_tag 'OHNO-neutral.png', class: 'ohno-neutral' %>

@@ -38,7 +38,7 @@ body {
 
 p {
     display: inline;
-    font-size: 0.85em;
+    font-size: 0.65em;
 }
 
 h1 {
@@ -65,7 +65,7 @@ header {
     margin-left: -1%;
     /* margin-top: -1%; */ 
     width: 102%;
-    height: 9.5%;
+    height: 9%;
     position: relative;
     white-space: nowrap;
 }
@@ -76,12 +76,12 @@ header {
     vertical-align: middle;
 }
 
-.logo {
+ .logo {
     width: 14%;
     margin-left: 2%;
     vertical-align: middle;
     opacity: 0.7;
-}
+} 
 
 .logo-wrapper {
     height: 76.4%;
@@ -90,9 +90,9 @@ header {
 .points {
     font-family: Orator Std;
     top: -1px;
-    right: 53px;
+    right: 35px;
     position: absolute;
-    font-size: 85%;
+    font-size: 80%;
     opacity: 0.7;
 }
 
@@ -207,7 +207,8 @@ header {
     font-size: 2em;
     font-family: 'Orator Std';
     opacity: 0.7;
-    line-height: 95%;
+    line-height: 80%;
+    letter-spacing: 3px;
 }
 
 .ohno {
@@ -231,7 +232,7 @@ header {
     font-size: 2em;
     font-family: 'Orator Std';
     opacity: 0.7;
-    line-height: 95%;
+    line-height: 80%;
 }
 
 .ohno-neutral {
@@ -252,7 +253,7 @@ header {
     font-size: 2em;
     font-family: 'Orator Std';
     opacity: 0.7;
-    line-height: 95%;
+    line-height: 80%;
     margin-top: 1%;
     .submit-button {
       background-color: #31A877;
@@ -261,7 +262,7 @@ header {
       border-radius:3px;
       color: #fff;
       font-family: 'BerlinSansFB';
-      font-size: 20px;
+      font-size: 10px;
       text-decoration: none;
       cursor: pointer;
       border:none;
@@ -274,6 +275,10 @@ header {
     input {
         border: none;
         border-radius: 3px;
+        width: 5%;
+    }
+    label {
+        font-size: .5em;
     }
 }
 
