@@ -77,4 +77,7 @@ Saveohno::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Add wildcard stylesheets to precompiling
+  config.assets.precompile += %w(laptop.css.scss laptop2.css.scss laptop3.css.scss laptop4.css.scss tablet.css.scss)
 end
