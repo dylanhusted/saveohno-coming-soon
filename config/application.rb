@@ -22,6 +22,5 @@ module Saveohno
 
     # add app/assets/fonts to the asset path
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
-    config.serve_static_assets = true
   end
 end
