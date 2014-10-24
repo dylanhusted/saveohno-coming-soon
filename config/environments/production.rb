@@ -79,5 +79,5 @@ Saveohno::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Add wildcard stylesheets to precompiling
-  config.assets.precompile += %w(laptop.css.scss laptop2.css.scss laptop3.css.scss laptop4.css.scss tablet.css.scss)
+  config.assets.precompile += %w(laptop.css)
 end
