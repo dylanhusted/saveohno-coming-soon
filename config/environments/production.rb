@@ -80,4 +80,5 @@ Saveohno::Application.configure do
 
   # Add wildcard stylesheets to precompiling
   config.assets.precompile += %w(laptop.css)
+  config.assets.precompile += %w(laptop2.css)
 end
