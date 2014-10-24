@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $('body').click(function() {
         $('#start-here').hide();
-        $('.overlay').hide();
+        $('.overlay').fadeOut('slow');
     });
 
     $('#fingerprint').unbind('click');
