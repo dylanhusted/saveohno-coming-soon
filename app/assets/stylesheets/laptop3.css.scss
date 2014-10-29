@@ -1,3 +1,41 @@
+@media screen and (orientation:portrait) {
+    // CSS applied when the device is in portrait mode
+
+    @font-face {
+      font-family: 'BerlinSansFB';
+      src: url(font-path('BerlinSansFB.ttf')) format('truetype')
+    }
+
+    body {
+        background-color: #6AC470;
+    }
+
+    .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .logo-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    #start-here, #fingerprint, .points, .hub, .floating-display {
+        visibility: hidden;
+    }
+
+    .turn-device {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: BerlinSansFB;
+        font-size: 3em;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    // CSS applied when the device is in landscape mode
+
 /* Universal */
 
 .turn-device {
@@ -286,7 +324,7 @@ header {
     }
 }
 
-
+}
 
 
 
