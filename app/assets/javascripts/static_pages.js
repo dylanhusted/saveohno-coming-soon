@@ -4,11 +4,11 @@ $(document).ready(function() {
         $('header').css("height", "12%");
         $('.logo').css("width", "12%");
         $('.points').css("font-size", "55%");
-        $('.ohno-sad').css("width", "5%");
-        $('.ohno-neutral').css("width", "5%");
-        $('.who-is-ohno-content').css("font-size", "1em");
-        $('.what-is-saveohno-content').css("font-size", "1em");
-        $('.stay-updated-content').css("font-size", "1em");
+        $('.ohno-sad').css("width", "3%");
+        $('.ohno-neutral').css("width", "3%");
+        $('.who-is-ohno-content').css("font-size", "1.5em");
+        $('.what-is-saveohno-content').css("font-size", "1.5em");
+        $('.stay-updated-content').css("font-size", "1.5em");
     }
 
     /* $('.floating-display').resizable(); */
