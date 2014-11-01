@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.points').css("font-size", "55%");
         $('.ohno-neutral').css("width", "5%");
         $('.ohno-tornado').css("width", "10%");
-        $('.who-is-ohno-content').css("font-size", "1.45em");
+        $('.who-is-ohno-content').css("font-size", "1.5em");
         $('.what-is-saveohno-content').css("font-size", "1.5em");
         $('.stay-updated-content').css("font-size", "1.5em");
         $('#start-here').css("margin-top", "5%");
