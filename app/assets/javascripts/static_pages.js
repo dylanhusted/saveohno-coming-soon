@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('header').css("height", "15%");
+        $('header').css("height", "12%");
+        $('.logo').css("width", "12%");
+        $('.points').css("font-size", "55%");
+
     }
 
     /* $('.floating-display').resizable(); */
