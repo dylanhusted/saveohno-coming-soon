@@ -45,7 +45,7 @@
 
 @font-face { 
     font-family: Orator Std;
-    src: font-url('/assets/fonts/oratorstd.otf');
+    src: url(font-path('oratorstd.otf')) format('opentype')
 }
 
 @font-face {
