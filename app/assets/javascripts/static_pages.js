@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('header').css("height", "15%");
+    }
+
     /* $('.floating-display').resizable(); */
     $('.floating-display').draggable();
     $('#fingerprint2').hide();
