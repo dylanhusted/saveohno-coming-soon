@@ -4,8 +4,7 @@ $(document).ready(function() {
         $('header').css("height", "12%");
         $('.logo').css("width", "12%");
         $('.points').css("font-size", "55%");
-        $('.ohno').css("width", "5%");
-        $('.ohno-sad').css("width", "5%");
+        $('.ohno-sad').css("width", "5% !important");
         $('.ohno-neutral').css("width", "5%");
         $('.ohno-tornado').css("width", "10%");
         $('.who-is-ohno-content').css("font-size", "1.5em");
