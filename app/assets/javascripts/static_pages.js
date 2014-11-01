@@ -15,7 +15,6 @@ $(document).ready(function() {
         $('#start-here').css("margin-top", "5%");
         $('#start-here').css("margin-right", "2%");
         $('#start-here').css("width", "40%");
-        $('body').css("background-image", "mobile-background.png")
     }
 
     /* $('.floating-display').resizable(); */
