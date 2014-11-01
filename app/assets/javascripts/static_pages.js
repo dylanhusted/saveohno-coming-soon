@@ -4,6 +4,9 @@ $(document).ready(function() {
         $('header').css("height", "12%");
         $('.logo').css("width", "12%");
         $('.points').css("font-size", "55%");
+        $('.ohno').css("margin-top", "-1.5%");
+        $('.ohno-sad').css("margin-top", "-1%");
+        $('.ohno-neutral').css("margin-top", "-1%");
         $('.ohno-neutral').css("width", "5%");
         $('.ohno-tornado').css("width", "10%");
         $('.who-is-ohno-content').css("font-size", "1.5em");
@@ -12,6 +15,7 @@ $(document).ready(function() {
         $('#start-here').css("margin-top", "5%");
         $('#start-here').css("margin-right", "2%");
         $('#start-here').css("width", "40%");
+        $('body').css("background-image", "url(mobile-background.png)")
     }
 
     /* $('.floating-display').resizable(); */
