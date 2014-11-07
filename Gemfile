@@ -11,6 +11,8 @@ group :development do
 end
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'jquery-ui-rails'
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 # New Relix RPM
 gem 'newrelic_rpm'

@@ -1,4 +1,7 @@
 Saveohno::Application.routes.draw do
+  devise_for :users, ActiveAdmin::Devise.config
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root 'static_pages#home'
   resources :pre_launch_users
   # The priority is based upon order of creation: first created -> highest priority.
