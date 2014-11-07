@@ -8,7 +8,7 @@ class PreLaunchUsersController < ApplicationController
 	if @pre_launch_user.save 
 	  render 'signup_success'
 	else
-	  render 'new'
+	  render 'signup_failure'
 	end
   end
 
