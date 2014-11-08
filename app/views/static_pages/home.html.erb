@@ -44,7 +44,7 @@
       <%= image_tag 'Next Button.png', id: 'next-button' %>
     </div>
     <div class="stay-updated-content">
-      <%= render partial: 'pre_launch_users/new_pre_launch_user', object: @pre_launch_user %>
+      <%= render partial: 'pre_launch_users/mailing_list_request', object: @pre_launch_user %>
     </div>
   </div> 
   <%= link_to image_tag('kickstarter-badge.png', class: 'kickstarter-badge'), new_pre_launch_user_path %>
