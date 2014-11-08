@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SaveOhno | Kickstarter Pledge</title>
+  <%= stylesheet_link_tag "pre_launch_users", media: "screen", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <%= render 'layouts/header' %>
+  <div class="container">
+    <div class="overlay2">
+      <div class="floating-wrapper">
+        <div class="floating-window">
+          <div class="select-question">
+            <h2> Do you want to select this perk? </h2>
+            <div class="button-yes">Yes</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="button-no">No</div>
+          </div>  
+          <div class="new-user-form">
+            <h4>You're the best! Please fill out the following info and we'll email you when we launch our Kickstarter campaign.</h4>
+            <%= form_for(@pre_launch_user) do |f| %>
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+
+              <%= f.label :donation_amount %>
+              <%= f.text_field :donation_amount %>
+
+              <%= f.label :email %>
+              <%= f.text_field :email %>
+              <br>
+              (Don't worry, we won't spam you. We promise.)
+
+              <br>  
+              <%= f.submit "Submit", class: "submit-button" %>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="button-no button-close">Close</div>
+            <% end %>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <h1> Help us with our upcoming Kickstarter campaign! </h1>
+    <h3> Our campaign will be launching on November 29th, and we're looking to collect 30% in pledges before we even launch. Help us rise to the top of Kickstarter's listings by <span class="bold">pledging to donate</span> on day 1! </h3>
+    <div class="perk perk-small">
+      <h3> Perk #1: $10-24.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Bronze 'Kickstarter' Badge on your SaveOhno Profile </li>
+      </ul>
+      <%= image_tag 'Perk Level 1.png', class: 'perk-1-img' %>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div class="perk perk-small">
+      <h3> Perk #2: $25-49.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Bronze 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+      </ul>
+      <%= image_tag 'Perks Level 2.png', class: 'perk-2-img' %>
+    </div>
+    <div class="perk perk-med">
+      <h3> Perk #3: $50-99.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Silver 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+      </ul>
+      <%= image_tag 'Perks Level 3.png', class: 'perk-3-img' %>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div class="perk perk-med">
+      <h3> Perk #4: $100-149.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Silver 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+        <li> We plant a tree and send you one in the mail </li>
+      </ul>
+      <%= image_tag 'Perks level 4.png', class: 'perk-4-img' %>
+    </div>
+    <div class="perk perk-big">
+      <h3> Perk #5: $150-199.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Gold 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+        <li> Warning: Climate Change Coming T-Shirt </li>
+      </ul>
+      <%= image_tag 'Perks level 5.png', class: 'perk-5-img' %>
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <div class="perk perk-big">
+      <h3> Perk #6: $200-499.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Gold 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+        <li> 'The Lump Of Coal': Glass box with a piece of coal inside, engraved with: "One less piece of coal for the atmosphere"  </li>
+      </ul>
+      <%= image_tag 'Perks level 6.png', class: 'perk-6-img' %>
+  </div>
+  <div class="perk perk-huge">
+      <h3> Perk #7: $500-999.99 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Platinum 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+        <li> Warning: Climate Change Coming T-Shirt </li>
+        <li> 'The Lump Of Coal': Glass box with a piece of coal inside, engraved with: "One less piece of coal for the atmosphere"  </li>
+        <li> Your 'Ohno-style' character will be in the actual Ohno game </li>
+      </ul>
+      <%= image_tag 'Perks level 7.png', class: 'perk-7-img' %>
+   </div>
+   &nbsp;&nbsp;&nbsp;
+    <div class="perk perk-huge">
+      <h3> Perk #8: $1000 </h3>
+      <ul>
+        <li> Thank you email </li>
+        <li> Platinum 'Kickstarter' Badge on your SaveOhno Profile </li>
+        <li> Your name feauted on our website </li>
+        <li> Custom SaveOhno pen </li>
+        <li> Customized 'Ohno-style' picture of you </li>
+        <li> Early access beta tester </li>
+        <li> Warning: Climate Change Coming T-Shirt </li>
+        <li> 'The Lump Of Coal': Glass box with a piece of coal inside, engraved with: "One less piece of coal for the atmosphere"  </li>
+        <li> Your 'Ohno-style' character will be in the actual Ohno game </li>
+        <li> Board position interview </li>
+      </ul>
+      <%= image_tag 'Perks Level 8.png', class: 'perk-8-img' %>
+   </div>
+</body>
+</html>

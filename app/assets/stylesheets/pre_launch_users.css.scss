@@ -1,3 +1,186 @@
 // Place all the styles related to the PreLaunchUsers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+@font-face {
+    font-family: 'BerlinSansFB';
+    src: url(font-path('BerlinSansFB.ttf')) format('truetype')
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	padding-top: 60px;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	font-family: BerlinSansFB;
+	color: $gray;
+	margin-top: 2%;
+}
+
+h3 {
+	color: $grayLight;
+	font-family: BerlinSansFB;
+	margin-top: 3%;
+}
+
+.bold {
+	color: $gray;
+	font-size: 1.1em;
+}
+
+header {
+  width: 100%;
+  background-color: #6AC470;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  clear: both;
+  nav {
+    display: inline-block;
+    float: right;
+    a {
+      font-family: BerlinSansFB;
+      color: $gray !important;
+      vertical-align: middle;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 17%;
+  padding-top: 4px;
+  float: left;
+  left: 0;
+}
+
+.perk {
+	border: 3px $gray solid;
+	border-radius: 5px;
+	width: 40%;
+	overflow: hidden;
+	margin-top: 4%;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		border: 3px #6AC470 solid;
+	}
+	h3 {
+		color: #6AC470;
+	}
+	ul {
+		text-align: left;
+		li {
+			font-family: BerlinSansFB;
+			color: $gray;
+		}
+	}
+}
+
+.perk-small {
+	height: 405px;
+}
+
+.perk-med {
+	height: 500px;
+}
+
+.perk-big {
+	height: 525px;
+}
+
+.perk-huge {
+	height: 585px;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.85); /*dim the background*/
+  text-align: center;
+  padding: 5% 0;
+}
+
+.floating-wrapper {
+	width: 100%;
+	position: fixed;
+}
+
+.floating-window {
+  width: 45%;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 11; /* 1 higher than the overlay layer */
+  padding: 5%;
+  margin-top: 200px;
+  position: relative;
+  font-family: BerlinSansFB;
+}
+
+.button-yes {
+	display: inline-block;
+	background-color: #6AC470;
+	border-radius: 5px;
+	width: 14%;
+	color: white;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-top: 4%;
+	padding: 1%;
+	font-family: BerlinSansFB;
+}
+
+.button-no {
+	display: inline-block;
+	background-color: $gray;
+	border-radius: 5px;
+	width: 14%;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-top: 4%;
+	padding: 1%;
+	font-family: BerlinSansFB;
+}
+
+.submit-button {
+	display: inline-block;
+	background-color: #6AC470;
+	border-radius: 5px;
+	width: 14% !important;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: none;
+	margin-top: -1%;
+	padding: 1%;
+	color: white;
+	font-family: BerlinSansFB;
+}
+
+.new-user-form {
+	label {
+	  font-size: 1.25em;
+	}
+}
+
+
+
+
+
+
+
+
