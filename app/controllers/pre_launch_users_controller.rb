@@ -18,6 +18,6 @@ class PreLaunchUsersController < ApplicationController
 
 	private
 	  def pre_launch_user_params
-	  	params.require(:pre_launch_user).permit(:name, :email, :donation_amount)
+	  	params.require(:pre_launch_user).permit(:name, :email, :donation_amount, :pledged)
 	  end
 end

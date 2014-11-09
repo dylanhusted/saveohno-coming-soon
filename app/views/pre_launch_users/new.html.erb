@@ -26,6 +26,10 @@
 
               <%= f.label :donation_amount %>
               <%= f.text_field :donation_amount %>
+              <br>
+              <%= f.check_box :pledged %>
+              <%= f.label :pledged, "The Pledge", class: "checkbox inline" %>
+              <p> I pledge to pay this amount to SaveOhno.org's Kickstarter campaign once it launches and I'm emailed a reminder. </p>
 
               <%= f.label :email %>
               <%= f.text_field :email %>
