@@ -6,6 +6,10 @@ $(document).ready(function() {
 		$('.overlay2').fadeIn('slow');
 	});
 
+	$('.not-perk').click(function() {
+		$('.overlay2').fadeIn('slow');
+	});
+
 	$('.button-yes').click(function() {
 		$('.select-question').fadeOut('fast');
 		$('.new-user-form').fadeIn('slow');

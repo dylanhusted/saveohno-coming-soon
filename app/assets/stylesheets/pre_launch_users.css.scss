@@ -63,6 +63,32 @@ header {
   left: 0;
 }
 
+.not-perk {
+	border: 3px $gray solid;
+	border-radius: 5px;
+	width: 82.75%;
+	overflow: hidden;
+	margin-top: 4%;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		border: 3px #6AC470 solid;
+	}
+	h3 {
+		color: #6AC470;
+	}
+	.ul-wrapper {
+		display: inline-block;
+		ul {
+		text-align: left;
+			li {
+				font-family: BerlinSansFB;
+				color: $gray;
+			}
+		}
+	}
+}
+
 .perk {
 	border: 3px $gray solid;
 	border-radius: 5px;
@@ -177,7 +203,30 @@ header {
 	}
 }
 
-
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #DFDFDF;
+  color: $grayLight;
+  font-family: BerlinSansFB;
+  a {
+    color: $grayLight;
+    &:hover {
+      color: $gray;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
 
 
 
