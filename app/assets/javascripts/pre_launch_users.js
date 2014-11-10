@@ -23,4 +23,8 @@ $(document).ready(function() {
 		$('.new-user-form').hide();
 		$('.select-question').show();
 	});
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('header').css("height", "12%");
+    }
 });
