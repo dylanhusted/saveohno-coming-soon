@@ -11,6 +11,7 @@ $(document).ready(function() {
         $('.not-perk').css('font-size', '1.25em');
         $('li').css('margin-bottom', '2%');
         $('.margin-right').css('margin-right', '0%');
+        $('body').css('overflow', 'hidden');
     }
 
 	$('.overlay2').hide();
