@@ -6,9 +6,9 @@ $(document).ready(function() {
         $('.perk-med').css('height', '535px');
         $('.perk-big').css('height', '575px');
         $('.perk-huge').css('height', '610px');
-        $('.perk-img').css('width', '10%');
+        $('.perk-img').css('width', '50%');
         $('.spacing').html();
-        $('.perk').css('font-size', '1.75em');
+        $('.perk').css('font-size', '2em');
         $('.not-perk').css('font-size', '1.25em');
     }
 
@@ -16,11 +16,11 @@ $(document).ready(function() {
 	$('.new-user-form').hide();
 
 	$('.perk').click(function() {
-		$('.overlay2').fadeIn('slow');
+		$('.overlay2').fadeIn();
 	});
 
 	$('.not-perk').click(function() {
-		$('.overlay2').fadeIn('slow');
+		$('.overlay2').fadeIn();
 	});
 
 	$('.button-yes').click(function() {
