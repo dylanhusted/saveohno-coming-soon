@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('header').css("height", "15px");
+        $('header').addClass('importantHeight')
     }
-    
+
 	$('.overlay2').hide();
 	$('.new-user-form').hide();
 
