@@ -11,7 +11,6 @@ $(document).ready(function() {
         $('.not-perk').css('font-size', '1.25em');
         $('li').css('margin-bottom', '2%');
         $('.margin-right').css('margin-right', '0%');
-        $('body').css('overflow', 'hidden');
     }
 
 	$('.overlay2').hide();
@@ -19,10 +18,16 @@ $(document).ready(function() {
 
 	$('.perk').click(function() {
 		$('.overlay2').fadeIn();
+		if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+		  window.scrollTo(0, 0);
+		}
 	});
 
 	$('.not-perk').click(function() {
 		$('.overlay2').fadeIn();
+		if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+		  window.scrollTo(0, 0);
+		}
 	});
 
 	$('.button-yes').click(function() {
