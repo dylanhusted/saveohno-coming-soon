@@ -21,14 +21,14 @@ $(document).ready(function() {
 	$('.perk').click(function() {
 		$('.overlay2').fadeIn();
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		  $(window).scrollTo(0, 0);
+		  $('body').scrollTop(0);
 		}
 	});
 
 	$('.not-perk').click(function() {
 		$('.overlay2').fadeIn();
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		  $(window).scrollTo(0, 0);
+		  $('body').scrollTop(0);
 		}
 	});
 
