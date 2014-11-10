@@ -155,6 +155,7 @@ header {
 .floating-wrapper {
 	width: 100%;
 	position: fixed;
+	-webkit-overflow-scrolling: touch;
 }
 
 .floating-window {
@@ -168,7 +169,7 @@ header {
   z-index: 11; /* 1 higher than the overlay layer */
   padding: 5%;
   margin-top: 200px;
-  position: fixed;
+  position: relative;
   font-family: BerlinSansFB;
 }
 
