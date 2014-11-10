@@ -6,10 +6,11 @@ $(document).ready(function() {
         $('.perk-med').css('height', '535px');
         $('.perk-big').css('height', '575px');
         $('.perk-huge').css('height', '610px');
-        $('.perk-img').css('width', '50%');
+        $('.perk-img').css('width', '55%');
         $('.perk').css('font-size', '2em');
         $('.not-perk').css('font-size', '1.25em');
-        $('h3').css('line-height', '125%');
+        $('.perk').css('line-height', '150%');
+        $('.margin-right').css('margin-right', '0%');
     }
 
 	$('.overlay2').hide();
