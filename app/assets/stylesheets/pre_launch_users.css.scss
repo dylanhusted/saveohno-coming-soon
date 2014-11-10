@@ -35,6 +35,33 @@ h3 {
 	font-size: 1.1em;
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+header {
+  width: 100%;
+  background-color: #6AC470;
+  height: 15px;
+  text-align: center;
+  vertical-align: middle;
+  clear: both;
+  nav {
+    display: inline-block;
+    float: right;
+    a {
+      font-family: BerlinSansFB;
+      color: $gray !important;
+      vertical-align: middle;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+}
+
 header {
   width: 100%;
   background-color: #6AC470;
