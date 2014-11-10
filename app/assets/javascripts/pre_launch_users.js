@@ -1,7 +1,10 @@
 $(document).ready(function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('header').addClass('importantHeight')
-        $('.perk').css('width', '82.75%')
+        $('header').addClass('importantHeight');
+        $('.perk').css('width', '82.75%');
+        $('.spacing').html();
+        $('.perk').css('font-size', '1.25em');
+        $('.not-perk').css('font-size', '1.25em');
     }
 
 	$('.overlay2').hide();
