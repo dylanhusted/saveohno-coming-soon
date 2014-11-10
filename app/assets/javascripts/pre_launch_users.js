@@ -20,14 +20,14 @@ $(document).ready(function() {
 
 	$('.perk').click(function() {
 		$('.overlay2').fadeIn();
-		if iOS == true {
+		if(iOS == true) {
 		  window.scrollTo(0, 0);
 		}
 	});
 
 	$('.not-perk').click(function() {
 		$('.overlay2').fadeIn();
-		if iOS == true {
+		if(iOS == true) {
 		  window.scrollTo(0, 0);
 		}
 	});
