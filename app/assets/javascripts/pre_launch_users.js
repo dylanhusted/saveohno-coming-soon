@@ -13,19 +13,21 @@ $(document).ready(function() {
         $('.margin-right').css('margin-right', '0%');
     }
 
+    var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
 	$('.overlay2').hide();
 	$('.new-user-form').hide();
 
 	$('.perk').click(function() {
 		$('.overlay2').fadeIn();
-		if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+		if iOS == true {
 		  window.scrollTo(0, 0);
 		}
 	});
 
 	$('.not-perk').click(function() {
 		$('.overlay2').fadeIn();
-		if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod') {
+		if iOS == true {
 		  window.scrollTo(0, 0);
 		}
 	});
