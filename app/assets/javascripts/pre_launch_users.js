@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('header').addClass('importantHeight')
+        $('.perk').css('width', '82.75%')
     }
 
 	$('.overlay2').hide();
