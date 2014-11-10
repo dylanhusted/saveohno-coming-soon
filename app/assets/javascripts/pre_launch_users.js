@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.perk-img').css('width', '50%');
         $('.perk').css('font-size', '2em');
         $('.not-perk').css('font-size', '1.25em');
-        $('.li').css('margin-bottom', '2%');
+        $('li').css('margin-bottom', '2%');
         $('.margin-right').css('margin-right', '0%');
     }
 

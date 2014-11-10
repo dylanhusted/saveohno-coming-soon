@@ -168,7 +168,7 @@ header {
   z-index: 11; /* 1 higher than the overlay layer */
   padding: 5%;
   margin-top: 200px;
-  position: relative;
+  position: fixed;
   font-family: BerlinSansFB;
 }
 
