@@ -15,7 +15,6 @@ html, body {
 body {
 	padding-top: 60px;
 	text-align: center;
-	position: relative;
 }
 
 h1 {
@@ -46,6 +45,7 @@ header {
   text-align: center;
   vertical-align: middle;
   clear: both;
+  position: fixed;
   nav {
     display: inline-block;
     float: right;
@@ -172,7 +172,6 @@ header {
   z-index: 11; /* 1 higher than the overlay layer */
   padding: 5%;
   margin-top: 200px;
-  position: relative;
   font-family: BerlinSansFB;
 }
 
