@@ -1,6 +1,20 @@
-<h1> Thank you! </h1>
-<br>
-<br>
-<center>
-<%= link_to 'Go to home page', root_url %>
-</center>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SaveOhno | Kickstarter Pledge</title>
+  <%= stylesheet_link_tag "pre_launch_users", media: "screen", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <%= render 'layouts/header' %>
+  <div class="container">
+	<h1> Thank you! </h1>
+	<br>
+	<br>
+	<center>
+	<%= link_to 'Learn more about SaveOhno', root_path %>
+	</center>
+  </div>
+</body>
+</html>

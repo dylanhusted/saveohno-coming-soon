@@ -3,6 +3,8 @@ Saveohno::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'static_pages#home'
+  match '/failure', to: 'pre_launch_users#signup_failure', via: :get
+  match '/success', to: 'pre_launch_users#signup_success', via: :get
   resources :pre_launch_users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

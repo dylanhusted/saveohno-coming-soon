@@ -1,27 +1,41 @@
-<h1> Sign up failed, please fill in all fields and check 'The Pledge' </h1>
-<center><div id="new-user-form-after">
-<%= form_for(@pre_launch_user) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <br>
-  <%= f.label :donation_amount %>
-  <br>
-  <%= f.text_field :donation_amount %>
-  <br>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SaveOhno | Kickstarter Pledge</title>
+  <%= stylesheet_link_tag "pre_launch_users", media: "screen", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <%= render 'layouts/header' %>
+  <div class="container">
+    <h1> Sign up failed, please fill in all fields and check 'The Pledge' </h1>
+    <center><div id="new-user-form-after">
+    <%= form_for(@pre_launch_user) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <br>
+      <%= f.label :donation_amount %>
+      <br>
+      <%= f.text_field :donation_amount %>
+      <br>
 
-  <%= f.check_box :pledged %>
-  <%= f.label :pledged, "The Pledge", class: "checkbox inline" %>
-  <p> I pledge to pay this amount to SaveOhno.org's Kickstarter campaign once it launches and I'm emailed a reminder. </p>
-  <br>
+      <%= f.check_box :pledged %>
+      <%= f.label :pledged, "The Pledge", class: "checkbox inline" %>
+      <p> I pledge to pay this amount to SaveOhno.org's Kickstarter campaign once it launches and I'm emailed a reminder. </p>
+      <br>
 
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <br>
-  <br>
-  <%= f.submit "Submit", class: "submit-button" %>
-<% end %>
-</div>
-<br>
-<br>
-<%= link_to 'Go to home page', root_url %>
-</center>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      <br>
+      <br>
+      <%= f.submit "Submit", class: "submit-button" %>
+    <% end %>
+    </div>
+    <br>
+    <br>
+    <%= link_to 'Go back', new_pre_launch_user_path %>
+    </center>
+  </div>  
+</body>
+</html>  

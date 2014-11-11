@@ -4,16 +4,22 @@ class PreLaunchUsersController < ApplicationController
     render :layout => false
   end
 
-  def create
-	@pre_launch_user = PreLaunchUser.new(pre_launch_user_params)
-	if @pre_launch_user.save 
-	  render 'signup_success'
-	else
-	  render 'signup_failure'
-	end
+  def signup_failure
+  	@pre_launch_user = PreLaunchUser.new
+  	render :layout => false
   end
 
   def signup_success
+  	render :layout => false
+  end
+
+  def create
+	@pre_launch_user = PreLaunchUser.new(pre_launch_user_params)
+	if @pre_launch_user.save 
+	  redirect_to success_path
+	else
+	  redirect_to failure_path
+	end
   end
 
 	private
