@@ -18,6 +18,7 @@ $(document).ready(function() {
 	$('.overlay2').hide();
 	$('.new-user-form').hide();
 
+	/* 
 	$('.perk').click(function() {
 		$('.overlay2').fadeIn();
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -45,4 +46,5 @@ $(document).ready(function() {
 		$('.new-user-form').hide();
 		$('.select-question').show();
 	});
+	*/
 });

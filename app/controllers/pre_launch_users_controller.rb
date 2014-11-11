@@ -4,6 +4,11 @@ class PreLaunchUsersController < ApplicationController
     render :layout => false
   end
 
+  def pledge
+    @pre_launch_user = PreLaunchUser.new
+    render :layout => false
+  end
+
   def signup_failure
   	@pre_launch_user = PreLaunchUser.new
   	render :layout => false

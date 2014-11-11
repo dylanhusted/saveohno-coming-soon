@@ -5,6 +5,7 @@ Saveohno::Application.routes.draw do
   root 'static_pages#home'
   match '/failure', to: 'pre_launch_users#signup_failure', via: :get
   match '/success', to: 'pre_launch_users#signup_success', via: :get
+  match '/pledge',  to: 'pre_launch_users#pledge',         via: :get
   resources :pre_launch_users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SaveOhno | Kickstarter Pledge</title>
+  <title>SaveOhno | Kickstarter Pledge Form</title>
   <%= stylesheet_link_tag "pre_launch_users", media: "screen", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,9 +9,8 @@
 <body>
  <%= render 'layouts/header' %>
   <div class="container">
-    <h1> Sign up failed, please fill in all fields and check 'The Pledge' </h1>
+    <h1> You're the best! Please fill in all the fields and check 'The Pledge' </h1>
     <center><div id="new-user-form-after">
-    <br>
     <%= form_for(@pre_launch_user) do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
