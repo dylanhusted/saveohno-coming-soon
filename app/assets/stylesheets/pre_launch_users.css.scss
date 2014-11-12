@@ -29,6 +29,15 @@ h3 {
 	margin-top: 3%;
 }
 
+a {
+	color: #6AC470;
+	text-decoration: none;
+	font-family: BerlinSansFB;
+	&:hover {
+		color: #50A356;
+	}
+}
+
 .bold {
 	color: $gray;
 	font-size: 1.1em;
