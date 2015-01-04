@@ -321,11 +321,22 @@ header {
     }
 }
 
+  /* Donations */
+
 .kickstarter-badge {
     width: 20%;
     bottom: 0;
     left: 0;
     position: absolute;
+}
+
+.paypal-button {
+    position: absolute;
+    top: 0;
+    padding-top: 8.5%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
 }
 
 }
